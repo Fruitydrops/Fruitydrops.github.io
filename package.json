@@ -1,0 +1,21 @@
+{
+  "name": "valaxy-blog-Damon",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:ssg",
+    "build:spa": "valaxy build",
+    "build:ssg": "valaxy build --ssg",
+    "dev": "node scripts/dev-with-config-restart.mjs",
+    "rss": "valaxy rss",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "valaxy": "0.28.0-beta.4",
+    "valaxy-theme-yun": "0.28.0-beta.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
