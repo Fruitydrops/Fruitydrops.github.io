@@ -14,6 +14,13 @@ export default defineValaxyConfig<UserThemeConfig>({
   devtools: true,
 
   themeConfig: {
+    bg_image: {
+      enable: true,
+      url: "/day.jpg",
+      dark: "/night.jpg",
+      opacity: 1,
+    },
+
     banner: {
       enable: true,
       title: "Damon's Blog",//这里的格式有问题 总是竖直的 可能
@@ -34,13 +41,13 @@ export default defineValaxyConfig<UserThemeConfig>({
         name: "$locale:menu.categories",
         url: "/categories/",
         icon: "i-ri-folder-2-line",
-        color: "dodgerblue",
+        color: "var(--va-c-text)",
       },
       {
         name: "$locale:menu.tags",
         url: "/tags/",
         icon: "i-ri-price-tag-3-line",
-        color: "dodgerblue",
+        color: "var(--va-c-text)",
       },
     ],
 

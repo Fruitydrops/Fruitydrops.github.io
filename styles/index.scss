@@ -1,1 +1,281 @@
 // you can custom css here
+.yun-author-avatar .avatar-bg {
+  display: none;
+}
+
+:root:not(.dark) {
+  --day-sand-rgb: 242 236 226;
+  --day-foam-rgb: 235 229 219;
+  --day-cream-rgb: 248 244 238;
+
+  .yun-toggle-dark {
+    color: rgb(175 103 29) !important;
+    text-shadow: 0 1px 3px rgb(255 244 214 / 0.45);
+    filter: saturate(1.1) contrast(1.15);
+  }
+
+  .yun-square-container {
+    /* Day layout tuning */
+    --day-cluster-x: -420px;
+    --day-cluster-y: -96px;
+    --day-left-col: 160px;
+    --day-right-col: 420px;
+    --day-col-gap: 34px;
+    --day-row-gap: 12px;
+    --day-author-top: 112px;
+    --day-title-top: 8px;
+    --day-title-shift-x: 0px;
+    --day-actions-shift-x: 0px;
+    --day-text-align: left;
+
+    .site-author-name,
+    .site-author-intro,
+    .site-name,
+    .site-subtitle,
+    .site-description {
+      color: rgb(248 244 232) !important;
+      text-shadow: 0 2px 10px rgb(0 0 0 / 0.35);
+    }
+
+    .site-name::before,
+    .site-name::after {
+      border-color: rgb(248 244 232 / 0.9);
+    }
+
+    .site-subtitle {
+      font-size: 1.2rem !important;
+      line-height: 1.4;
+    }
+  }
+}
+
+:root:not(.dark) .post-card,
+:root:not(.dark) .post-card-body,
+:root:not(.dark) .post-card-body-with-cover,
+:root:not(.dark) .post-card-image,
+:root:not(.dark) .post-card-info {
+  background: rgb(var(--day-sand-rgb) / 0.9) !important;
+}
+
+:root:not(.dark) .yun-card,
+:root:not(.dark) .va-card,
+:root:not(.dark) .yun-aside,
+:root:not(.dark) .yun-card-body,
+:root:not(.dark) .yun-card-content {
+  background-color: rgb(var(--day-sand-rgb) / 0.94) !important;
+}
+
+:root:not(.dark) .post-card-info,
+:root:not(.dark) .post-card .post-tags a,
+:root:not(.dark) .post-card .post-categories a,
+:root:not(.dark) .post-card .post-meta a,
+:root:not(.dark) .post-card .tag,
+:root:not(.dark) .post-card .category {
+  background-color: rgb(var(--day-cream-rgb) / 0.78) !important;
+}
+
+:root:not(.dark) .post-card {
+  border-color: rgb(157 141 120 / 0.16) !important;
+}
+
+:root:not(.dark) .yun-card,
+:root:not(.dark) .va-card,
+:root:not(.dark) .yun-aside,
+:root:not(.dark) .post-card {
+  border: 1px solid rgb(157 141 120 / 0.12) !important;
+}
+
+:root:not(.dark) .post-card .post-title-link,
+:root:not(.dark) .post-card .post-title-link:visited,
+:root:not(.dark) .post-card .post-card-title {
+  color: rgb(28 28 28) !important;
+}
+
+:root:not(.dark) .post-card .post-title-link.gradient-text,
+:root:not(.dark) .post-card .post-title-link[class*="from-"],
+:root:not(.dark) .post-card .post-title-link[class*="to-"] {
+  background: none !important;
+  -webkit-text-fill-color: rgb(28 28 28) !important;
+}
+
+:root:not(.dark) .pagination .prev,
+:root:not(.dark) .pagination .next,
+:root:not(.dark) .pagination .page-number {
+  background-color: rgb(var(--day-sand-rgb) / 0.92) !important;
+  color: rgb(28 28 28) !important;
+}
+
+:root:not(.dark) .pagination .page-number.active,
+:root:not(.dark) .pagination .page-number:hover,
+:root:not(.dark) .pagination .prev:hover,
+:root:not(.dark) .pagination .next:hover,
+:root:not(.dark) .pagination .page-number:active,
+:root:not(.dark) .pagination .prev:active,
+:root:not(.dark) .pagination .next:active {
+  color: rgb(28 28 28) !important;
+}
+
+:root:not(.dark) .yun-footer {
+  background: rgb(var(--day-sand-rgb) / 0.92) !important;
+}
+
+:root:not(.dark) .yun-cloud {
+  --yun-c-cloud: rgb(var(--day-foam-rgb)) !important;
+}
+
+:root:not(.dark) .yun-footer-gradient {
+  --gradient-from: 242 236 226;
+  --gradient-to: 242 236 226;
+}
+
+:root:not(.dark) .yun-nav-menu.play {
+  background-color: rgb(var(--day-foam-rgb) / 0.96) !important;
+  border-color: rgb(157 141 120 / 0.12) !important;
+}
+
+:root:not(.dark) .yun-nav-menu .menu-btn:hover,
+:root:not(.dark) .yun-nav-menu .yun-icon-btn:hover,
+:root:not(.dark) .yun-nav-menu a:hover {
+  background-color: rgb(var(--day-cream-rgb) / 0.82) !important;
+}
+
+.yun-square-container .info > div:nth-of-type(2) {
+  transform: translateY(-28px) !important;
+}
+
+.yun-square-container .link-item {
+  transition-duration: 120ms !important;
+  transition-property: background-color, color, box-shadow, transform, opacity !important;
+  transition-timing-function: ease-out !important;
+}
+
+html.dark .yun-square-container .info-with-avatar {
+  transform: translateY(-130px);
+}
+
+html.dark .yun-square-container .links-of-author,
+html.dark .yun-square-container .info > div.mt-4 {
+  transform: translateY(240px);
+}
+
+html.dark .yun-square-container .links-of-author-item,
+html.dark .yun-square-container .links-of-author-item.social-link-invert-in-dark {
+  color: var(--va-c-text) !important;
+}
+
+html.dark .yun-square-container .info > div.py-4:first-of-type {
+  transform: translateY(-18px);
+}
+
+html.dark .yun-square-container .info > div.scale-x--100 {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  :root:not(.dark) {
+    .yun-square-container .info-with-avatar {
+      display: grid;
+      grid-template-columns: var(--day-left-col) minmax(280px, var(--day-right-col));
+      grid-template-rows: auto;
+      column-gap: var(--day-col-gap);
+      justify-content: start;
+      align-items: start;
+      transform: translate(var(--day-cluster-x), var(--day-cluster-y));
+    }
+
+    .yun-square-container .yun-square {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: center;
+      align-self: start;
+    }
+
+    .yun-square-container .info {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: var(--day-left-col) minmax(280px, var(--day-right-col));
+      grid-template-areas:
+        ". line-top"
+        "author text"
+        ". line-bottom"
+        "social social"
+        "nav nav";
+      column-gap: var(--day-col-gap);
+      row-gap: var(--day-row-gap);
+      align-items: start;
+      width: auto;
+      opacity: 1;
+    }
+
+    .yun-square-container .site-author-name {
+      grid-area: author;
+      margin-top: var(--day-author-top);
+      margin-bottom: 0;
+      text-align: center;
+      justify-self: center;
+      width: 100%;
+    }
+
+    .yun-square-container .site-author-intro {
+      display: none;
+    }
+
+    .yun-square-container .info > div.py-4:first-of-type {
+      grid-area: line-top;
+      margin: 0;
+      padding: 0 0 0.2rem;
+      display: none;
+    }
+
+    .yun-square-container .info > div:nth-of-type(2) {
+      grid-area: text;
+      transform: translate(var(--day-title-shift-x), var(--day-title-top)) !important;
+      text-align: var(--day-text-align);
+      justify-self: start;
+      width: 100%;
+      max-width: var(--day-right-col);
+    }
+
+    .yun-square-container .info > div.scale-x--100 {
+      grid-area: line-bottom;
+      margin: 0;
+      padding: 0.1rem 0 0;
+      display: block;
+      width: 100%;
+    }
+
+    .yun-square-container .links-of-author {
+      grid-area: social;
+      justify-self: start;
+      margin-top: 1.5rem;
+      margin-left: calc(var(--day-left-col) + var(--day-col-gap) + var(--day-actions-shift-x));
+      width: var(--day-right-col);
+      display: flex;
+      justify-content: center;
+      gap: 1.35rem;
+    }
+
+    .yun-square-container .links-of-author-item {
+      color: rgb(248 244 232) !important;
+    }
+
+    .yun-square-container .info > div.mt-4 {
+      grid-area: nav;
+      justify-self: start;
+      margin-top: 1.3rem;
+      margin-left: calc(var(--day-left-col) + var(--day-col-gap) + var(--day-actions-shift-x));
+      width: var(--day-right-col);
+      display: flex;
+      justify-content: center;
+    }
+
+    .yun-square-container .info > div.mt-4 .link-item {
+      color: rgb(248 244 232) !important;
+    }
+
+    .yun-square-container .info > div.mt-4 .link-item:hover {
+      color: rgb(87 56 31) !important;
+    }
+  }
+}
