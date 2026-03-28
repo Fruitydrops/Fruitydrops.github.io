@@ -3,6 +3,11 @@
   display: none;
 }
 
+.links-of-author + .yun-gradient-line,
+.links-of-author + .yun-gradient-line + .links.flex-center {
+  display: none !important;
+}
+
 :root:not(.dark) {
   --day-sand-rgb: 242 236 226;
   --day-foam-rgb: 235 229 219;
@@ -26,6 +31,7 @@
     --day-title-top: 8px;
     --day-title-shift-x: 0px;
     --day-actions-shift-x: 0px;
+    --day-actions-shift-y: 18px;
     --day-text-align: left;
 
     .site-author-name,
@@ -143,6 +149,16 @@
   transform: translateY(-28px) !important;
 }
 
+.yun-square-container .site-name {
+  font-size: clamp(2.6rem, 5vw, 3.5rem) !important;
+  line-height: 1.15 !important;
+}
+
+.yun-square-container .site-description {
+  font-size: clamp(1.15rem, 1.5vw, 1.45rem) !important;
+  line-height: 1.2 !important;
+}
+
 .yun-square-container .link-item {
   transition-duration: 120ms !important;
   transition-property: background-color, color, box-shadow, transform, opacity !important;
@@ -150,12 +166,12 @@
 }
 
 html.dark .yun-square-container .info-with-avatar {
-  transform: translateY(-130px);
+  transform: translateY(-190px);
 }
 
 html.dark .yun-square-container .links-of-author,
 html.dark .yun-square-container .info > div.mt-4 {
-  transform: translateY(240px);
+  transform: translateY(330px);
 }
 
 html.dark .yun-square-container .links-of-author-item,
@@ -248,7 +264,7 @@ html.dark .yun-square-container .info > div.scale-x--100 {
     .yun-square-container .links-of-author {
       grid-area: social;
       justify-self: start;
-      margin-top: 1.5rem;
+      margin-top: calc(1.5rem + var(--day-actions-shift-y));
       margin-left: calc(var(--day-left-col) + var(--day-col-gap) + var(--day-actions-shift-x));
       width: var(--day-right-col);
       display: flex;
@@ -263,7 +279,7 @@ html.dark .yun-square-container .info > div.scale-x--100 {
     .yun-square-container .info > div.mt-4 {
       grid-area: nav;
       justify-self: start;
-      margin-top: 1.3rem;
+      margin-top: calc(1.3rem + var(--day-actions-shift-y));
       margin-left: calc(var(--day-left-col) + var(--day-col-gap) + var(--day-actions-shift-x));
       width: var(--day-right-col);
       display: flex;
