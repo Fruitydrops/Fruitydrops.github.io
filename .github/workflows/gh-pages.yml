@@ -1,13 +1,7 @@
 name: GitHub Pages
 
 on:
-  push:
-    branches:
-      # The branch where the project source code resides
-      # 项目源代码所在的分支
-      - main
-      - master
-      - valaxy
+  workflow_dispatch:
 
 permissions:
   contents: write
