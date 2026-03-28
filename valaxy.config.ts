@@ -1,5 +1,6 @@
 import type { UserThemeConfig } from "valaxy-theme-yun";
 import { defineValaxyConfig } from "valaxy";
+import { addonWaline } from "valaxy-addon-waline";
 
 // add icons what you will need
 const safelist = ["i-ri-home-line"];
@@ -9,6 +10,16 @@ const safelist = ["i-ri-home-line"];
  */
 export default defineValaxyConfig<UserThemeConfig>({
   // site config see site.config.ts
+
+  addons: [
+    addonWaline({
+      serverURL: "https://damon-waline.vercel.app",
+      lang: "zh-CN",
+      reaction: false,
+      pageview: false,
+      comment: true,
+    }),
+  ],
 
   theme: "yun",
   devtools: true,

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "valaxy": "0.28.0-beta.4",
+    "valaxy-addon-waline": "0.2.1",
     "valaxy-theme-yun": "0.28.0-beta.4"
   },
   "devDependencies": {

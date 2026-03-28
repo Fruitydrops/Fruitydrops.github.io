@@ -76,6 +76,9 @@ export default defineSiteConfig({
   frontmatter: {
     time_warning: false,
   },
+  comment: {
+    enable: true,
+  },
   search: {
     enable: false,
   },
