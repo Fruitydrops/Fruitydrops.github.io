@@ -76,6 +76,9 @@ export default defineSiteConfig({
   frontmatter: {
     time_warning: false,
   },
+  license: {
+    enabled: false,
+  },
   comment: {
     enable: true,
   },

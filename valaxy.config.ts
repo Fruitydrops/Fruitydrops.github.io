@@ -22,7 +22,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   ],
 
   theme: "yun",
-  devtools: true,
+  devtools: false,
 
   themeConfig: {
     bg_image: {
