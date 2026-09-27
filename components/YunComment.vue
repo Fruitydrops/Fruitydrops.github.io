@@ -1,8 +1,10 @@
 <script lang="ts" setup>
 import { useRuntimeConfig } from 'valaxy'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const runtimeConfig = useRuntimeConfig()
+const { locale } = useI18n()
 const supportCommentAddons = ['valaxy-addon-waline', 'valaxy-addon-twikoo', 'valaxy-addon-artalk']
 
 const commentSystems = computed(() => {
@@ -12,6 +14,10 @@ const commentSystems = computed(() => {
 })
 
 const activeComment = ref(commentSystems.value[0])
+const isEnglish = computed(() => locale.value.toLowerCase().startsWith('en'))
+const connectivityNote = computed(() => isEnglish.value
+  ? 'Note: Vercel may be unreachable on some networks. If your comment fails to send, please switch to a network that can access Vercel and try again.'
+  : '提示：由于 Vercel 服务在部分网络环境下可达性不稳定，若评论发送失败，请科学上网后重试。')
 
 let originalAlert: typeof window.alert | undefined
 
@@ -20,7 +26,9 @@ const showCommentError: typeof window.alert = (message) => {
   const text = String(message)
 
   if (text === 'Failed to fetch') {
-    originalAlert?.('评论服务暂时无法连接。由于 Vercel 服务在部分网络环境下可达性不稳定，请科学上网后重试。')
+    originalAlert?.(isEnglish.value
+      ? 'The comment service could not be reached. Vercel may be unavailable on your current network. Please switch to a network that can access Vercel and try again.'
+      : '评论服务暂时无法连接。由于 Vercel 服务在部分网络环境下可达性不稳定，请科学上网后重试。')
     return
   }
 
@@ -42,7 +50,7 @@ onBeforeUnmount(() => {
   <YunCard w="full" p="4" class="comment yun-comment sm:p-6 lg:px-12 xl:px-16">
     <ClientOnly>
       <p class="waline-connectivity-note">
-        提示：由于 Vercel 服务在部分网络环境下可达性不稳定，若评论发送失败，请科学上网后重试。
+        {{ connectivityNote }}
       </p>
 
       <div v-if="commentSystems.length > 1" class="flex justify-end w-full mb-2">
