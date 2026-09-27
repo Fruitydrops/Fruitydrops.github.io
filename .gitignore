@@ -8,9 +8,13 @@ valaxy-fuse-list.json
 .vite-ssg-temp
 
 temp/
+.learnings/
 
 .DS_Store
 *.local
+*.bak
+*.backup.*
+*.tmp
 dist
 dist-ssr
 node_modules
