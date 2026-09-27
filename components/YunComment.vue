@@ -15,9 +15,6 @@ const commentSystems = computed(() => {
 
 const activeComment = ref(commentSystems.value[0])
 const isEnglish = computed(() => locale.value.toLowerCase().startsWith('en'))
-const connectivityNote = computed(() => isEnglish.value
-  ? 'Note: Vercel may be unreachable on some networks. If your comment fails to send, please switch to a network that can access Vercel and try again.'
-  : '提示：由于 Vercel 服务在部分网络环境下可达性不稳定，若评论发送失败，请科学上网后重试。')
 
 let originalAlert: typeof window.alert | undefined
 
@@ -49,10 +46,6 @@ onBeforeUnmount(() => {
 <template>
   <YunCard w="full" p="4" class="comment yun-comment sm:p-6 lg:px-12 xl:px-16">
     <ClientOnly>
-      <p class="waline-connectivity-note">
-        {{ connectivityNote }}
-      </p>
-
       <div v-if="commentSystems.length > 1" class="flex justify-end w-full mb-2">
         <YunSelect v-model="activeComment" :options="commentSystems" />
       </div>
@@ -65,14 +58,6 @@ onBeforeUnmount(() => {
 </template>
 
 <style lang="scss">
-.waline-connectivity-note {
-  margin: 0 0 0.75rem;
-  color: var(--va-c-text-light);
-  font-size: 0.78rem;
-  line-height: 1.6;
-  text-align: right;
-}
-
 .comment {
   h1 {
     font-size: 2rem;
