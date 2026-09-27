@@ -1,10 +1,16 @@
 ---
-title: 我的小伙伴们
-keywords: 链接
-description: 云游的小伙伴们
-links: https://friends.yunyoujun.cn/links.json
-random: true
+title:
+  zh-CN: 友链
+  en: Links
+keywords: links
+description: 友链页面
+comment: false
 ---
 
-<YunLinks :links="frontmatter.links" :random="frontmatter.random" />
-    
+::: zh-CN
+友链正在整理中。
+:::
+
+::: en
+This page is being prepared.
+:::

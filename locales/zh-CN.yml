@@ -1,8 +1,6 @@
-# 你可以像这样自定义 i18n
 intro:
-  desc: Valaxy 模版
-  hi: 你好，Valaxy
+  desc: 钱锦圣的个人网站
+  hi: 你好，我是钱锦圣
 
-valaxy-notes: Valaxy 笔记
-valaxy: Valaxy
+site: 站点动态
 notes: 笔记

@@ -1,19 +1,23 @@
 ---
-title: Your first post
-date: 2022-04-01
-updated: 2025-04-01
-categories: valaxy-notes
+title:
+  zh-CN: 欢迎来到我的个人网站
+  en: Welcome to My Personal Website
+date: 2026-09-27
+updated: 2026-09-27
+categories: site
 tags:
-  - valaxy
   - notes
 top: 1
 ---
 
-## Valaxy
+::: zh-CN
+这里是我的个人网站。
 
+内容正在整理中，之后会逐步更新学习笔记、项目记录和随笔。
+:::
 
-Write your first post!
+::: en
+Welcome to my personal website.
 
-## Usage
-
-Modify `valaxy.config.ts` to custom your blog.
+I’m still organizing the content. Notes on learning, projects, and everyday thoughts will be added over time.
+:::

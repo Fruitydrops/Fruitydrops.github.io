@@ -1,8 +1,6 @@
-# you can custom locale
 intro:
-  desc: Valaxy Template
-  hi: Hello, Valaxy!
+  desc: Jinsheng Qian's personal website
+  hi: Hello, I'm Jinsheng Qian
 
-valaxy-notes: Valaxy Notes
-valaxy: Valaxy
+site: Site Updates
 notes: Notes

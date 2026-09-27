@@ -9,8 +9,6 @@ const safelist = ["i-ri-home-line"];
  * User Config
  */
 export default defineValaxyConfig<UserThemeConfig>({
-  // site config see site.config.ts
-
   addons: [
     addonWaline({
       serverURL: "https://damon-waline.vercel.app",
@@ -34,8 +32,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     banner: {
       enable: true,
-      title: "Damon's Blog",//这里的格式有问题 总是竖直的 可能
-      //后期要去样式里面修改格式 不然英文看不了 可以是Z型的
+      title: "Damon's Blog",
     },
 
     say: {

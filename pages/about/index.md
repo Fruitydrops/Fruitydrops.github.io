@@ -13,5 +13,7 @@ title:
 :::
 
 ::: en
-Write your English about-me content here.
+Hello, I’m Jinsheng Qian.
+I’m currently a third-year Software Engineering student in the School of Computer Science at Shanghai Jiao Tong University.
+This is my personal website.
 :::

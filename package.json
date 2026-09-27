@@ -5,7 +5,7 @@
   "private": true,
   "packageManager": "pnpm@10.15.0",
   "scripts": {
-    "build": "npm run build:spa && node scripts/create-spa-fallback.mjs",
+    "build": "valaxy build --ssg",
     "build:spa": "valaxy build",
     "build:ssg": "valaxy build --ssg",
     "dev": "node scripts/dev-with-config-restart.mjs",
@@ -13,9 +13,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "valaxy": "0.28.0-beta.4",
+    "valaxy": "1.0.0-rc.15",
     "valaxy-addon-waline": "0.2.1",
-    "valaxy-theme-yun": "0.28.0-beta.4"
+    "valaxy-theme-yun": "1.0.0-rc.16",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
   },
   "devDependencies": {
     "typescript": "^5.9.3"

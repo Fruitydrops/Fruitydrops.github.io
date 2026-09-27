@@ -30,7 +30,7 @@ npm run serve
 
 构建产物位于 `dist`，成品预览地址为 <http://localhost:4173/>。
 
-生产构建使用 SPA 模式，并生成 `404.html` 处理 GitHub Pages 深链接。`npm run build:ssg` 仅保留作兼容性排查，不用于部署。
+生产构建使用静态生成模式，会为文章和页面生成独立 HTML，直接打开深链接时能返回正常页面。
 
 ## 部署
 
@@ -53,4 +53,4 @@ GitHub 仓库的 Pages 来源应设置为 `gh-pages` 分支根目录。
 - `public`：图片与静态资源
 - `styles`：主题样式覆盖
 - `components`：自定义组件
-- `scripts`：本地开发和构建辅助脚本
+- `scripts`：本地开发辅助脚本
