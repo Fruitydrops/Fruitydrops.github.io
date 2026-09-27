@@ -1,10 +1,11 @@
 import { defineSiteConfig } from "valaxy";
 
 export default defineSiteConfig({
-  url: "https://Damon.github.io/", //set in advance
+  url: "https://fruitydrops.github.io/",
   lang: "zh-CN",
   languages: ["zh-CN", "en"],
   title: "Damon's Blog",
+  subtitle: "I am Groot.",
   author: {
     name: "Damon",
     avatar: "/favicon.png",

@@ -1,14 +1,17 @@
 ---
-title: 关于我
----
-//改这个
-
-If you like it, you can sponsor me in [GitHub](https://github.com/sponsors/YunYouJun) or [www.yunyoujun.cn/sponsors/](https://www.yunyoujun.cn/sponsors/).
-
+title:
+  zh-CN: 关于我
+  en: About Me
 ---
 
-我正在开发 [Valaxy](https://github.com/YunYouJun/valaxy) - 下一代静态博客框架。
+::: zh-CN
+你好，我是钱锦圣。
+我目前是上海交通大学计算机学院软件工程专业的大三学生。
+这是我的个人网站。
 
-如果你喜欢它，你可以在 [GitHub](https://github.com/sponsors/YunYouJun) 或 [www.yunyoujun.cn/sponsors/](https://www.yunyoujun.cn/sponsors/) 赞助我。
 
-Check out the [Valaxy | GitHub](https://github.com/YunYouJun/valaxy) for more details.
+:::
+
+::: en
+Write your English about-me content here.
+:::
