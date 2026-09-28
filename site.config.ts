@@ -9,9 +9,9 @@ export default defineSiteConfig({
   subtitle: "I am Groot.",
   author: {
     name: "Damon",
-    avatar: "/favicon.jpg?v=1",
+    avatar: "/avatar.webp?v=2",
   },
-  favicon: "/favicon_icon.png?v=3",
+  favicon: "/favicon_icon.png?v=4",
   description: "Sharing some of my thoughts and experiences.",
   social: [
     {

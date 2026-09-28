@@ -53,6 +53,7 @@ GitHub 仓库的 Pages 来源应设置为 `gh-pages` 分支根目录。
 - `pages/posts`：文章
 - `pages/about`：关于页面
 - `public`：图片与静态资源
+- `source-assets`：未压缩的原始背景图、头像与站点图标；网站使用 `public` 中优化后的版本
 - `styles`：主题样式覆盖
 - `components`：自定义组件
 - `scripts`：本地开发辅助脚本

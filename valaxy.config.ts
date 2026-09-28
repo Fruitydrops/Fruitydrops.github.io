@@ -25,8 +25,8 @@ export default defineValaxyConfig<UserThemeConfig>({
   themeConfig: {
     bg_image: {
       enable: true,
-      url: "/day.jpg",
-      dark: "/night.jpg",
+      url: "/day.webp",
+      dark: "/night.webp",
       opacity: 1,
     },
 
