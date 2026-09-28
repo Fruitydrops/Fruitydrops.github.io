@@ -1,0 +1,26 @@
+---
+title:
+  zh-CN: 一些有趣的视频
+  en: Some funny videos
+date: 2026-09-28
+updated: 2026-09-28
+toc: false
+aside: false
+categories: sharing
+tags:
+  - video
+  - links
+top: 2
+---
+
+https://www.bilibili.com/video/BV1Uve26eE6F?vd_source=b03e6eee342952883a5815841b08859d
+
+https://www.youtube.com/watch?v=UvV2CH5il3Q
+
+::: zh-CN
+我并不会告诉你每个链接在讲什么...
+:::
+
+::: en
+You will not know what each link is about until you click it ...
+:::

@@ -2,6 +2,8 @@
 title:
   zh-CN: 关于我
   en: About Me
+toc: false
+aside: false
 ---
 
 ::: zh-CN

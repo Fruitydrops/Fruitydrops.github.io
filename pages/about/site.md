@@ -2,6 +2,8 @@
 title:
   zh-CN: 关于站点
   en: About This Site
+toc: false
+aside: false
 ---
 
 ::: zh-CN

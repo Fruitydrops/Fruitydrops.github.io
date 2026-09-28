@@ -47,7 +47,7 @@ English body.
 
 ## 页面显示开关
 
-这些选项针对单篇文章设置；不写时采用主题默认行为。
+这些选项写在文章或单独页面的 frontmatter 中；不写时采用主题默认行为。
 
 | 字段 | 设置为 `false` 时 |
 | --- | --- |
@@ -55,7 +55,7 @@ English body.
 | `aside` | 隐藏本篇右侧侧栏（包括目录区域）。 |
 | `sidebar` | 隐藏本篇左侧侧栏。 |
 | `nav` | 隐藏上一篇/下一篇导航。 |
-| `comment` | 隐藏本篇评论区。 |
+| `comment` | 隐藏本篇/本页评论区。 |
 | `copyright` | 隐藏本篇底部版权信息。 |
 | `sponsor` | 不显示赞助信息。 |
 | `katex` | 关闭本篇数学公式渲染；只有站点启用了 KaTeX 时才有意义。 |
@@ -73,6 +73,26 @@ toc: false
 ```yaml
 aside: false
 ```
+
+## 评论区开关
+
+站点级开关位于 `site.config.ts`：
+
+```ts
+comment: {
+  enable: true,
+},
+```
+
+保持站点评论启用后，可以在任意一篇文章或单独页面的 frontmatter 中关闭评论区：
+
+```yaml
+comment: false
+```
+
+例如，在某篇文章或 `pages/about/site.md` 的 `---` 区块内添加这行。它会隐藏该页面整个评论组件（评论列表和输入框）；不会删除 Waline 中已有的评论。删除这行或设为 `comment: true` 后，在全局评论仍启用的前提下会重新显示。
+
+全局 `comment.enable: false` 会关闭所有页面的评论；单页 `comment: true` 不能覆盖全局关闭。当前仓库的分类页和归档页已通过 `comment: false` 关闭评论；标签页目前未设置该项，因此仍使用默认行为。
 
 ## 列表、草稿与跳转
 
