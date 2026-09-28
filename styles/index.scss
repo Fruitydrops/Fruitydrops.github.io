@@ -341,3 +341,11 @@ html.dark .yun-square-container .info > div.scale-x--100 {
     translate: -13px 311px !important;
   }
 }
+
+/* 本地预览：移除 YunBanner 的逐字竖排、中心竖线和下滑箭头 */
+#yun-banner .banner-char-container,
+#yun-banner .banner-line-container,
+#yun-banner .go-down {
+  display: none !important;
+}
+

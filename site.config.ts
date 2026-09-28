@@ -9,6 +9,8 @@ export default defineSiteConfig({
   subtitle: "I am Groot.",
   author: {
     name: "Damon",
+    email: "2597582283@sjtu.edu.cn",
+    link: "https://fruitydrops.github.io/",
     avatar: "/avatar.webp?v=2",
   },
   favicon: "/favicon_icon.png?v=4",

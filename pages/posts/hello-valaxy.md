@@ -4,6 +4,8 @@ title:
   en: Welcome to My Personal Website
 date: 2026-09-27
 updated: 2026-09-27
+toc: false
+aside: false
 categories: site
 tags:
   - notes
