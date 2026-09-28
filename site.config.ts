@@ -28,7 +28,7 @@ export default defineSiteConfig({
     },
     {
       name: "E-Mail",
-      link: "mailto:2597582283@qq.com",
+      link: "mailto:2597582283@sjtu.edu.cn",
       icon: "i-ri-mail-line",
       color: "#8E71C1",
     },
