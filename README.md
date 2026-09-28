@@ -19,7 +19,9 @@ pnpm install --frozen-lockfile
 npm run dev
 ```
 
-浏览器打开 <http://localhost:4859/>。修改 `site.config.ts` 或 `valaxy.config.ts` 后，开发进程会自动完整重启。
+浏览器打开终端显示的本地地址（通常是 <http://localhost:4859/>）。若端口被占用，Valaxy 会自动换用下一个可用端口。修改 `site.config.ts` 或 `valaxy.config.ts` 后，开发进程会自动完整重启。
+
+首页可视化排版工具只在本地开发首页显示。将浏览器窗口加宽到 960 像素以上，点击“开始拖动”调整头像、名字、标题、简介、社交图标和导航；浅色与深色分别保存。调整后点击“复制布局 CSS”，粘贴到 `styles/index.scss` 末尾即可固化布局，再按部署步骤发布。
 
 ## 构建与检查
 

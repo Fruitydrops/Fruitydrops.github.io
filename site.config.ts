@@ -2,6 +2,7 @@ import { defineSiteConfig } from "valaxy";
 
 export default defineSiteConfig({
   url: "https://fruitydrops.github.io/",
+  mode: "auto",
   lang: "zh-CN",
   languages: ["zh-CN", "en"],
   title: "Damon's Blog",
