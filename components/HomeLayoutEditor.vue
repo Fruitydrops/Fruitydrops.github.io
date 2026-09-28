@@ -30,6 +30,8 @@ const enabled = ref(false)
 const ready = ref(false)
 const isDesktop = ref(false)
 const copied = ref(false)
+const manualCss = ref('')
+const copyMessage = ref('')
 const offsets = ref<LayoutOffsets>(emptyOffsets())
 const isDark = ref(false)
 let observer: MutationObserver | undefined
@@ -169,9 +171,49 @@ async function copyCss() {
       return `  ${themeSelector} ${selectors[key]} {\n    translate: ${x}px ${y}px !important;\n  }`
     })
   const css = `/* ${modeName.value}首页布局，由本地拖拽编辑器生成 */\n@media (min-width: 960px) {\n${rules.join('\n\n') || '  /* 当前元素均未移动 */'}\n}\n`
-  await navigator.clipboard.writeText(css)
-  copied.value = true
-  window.setTimeout(() => copied.value = false, 1800)
+  manualCss.value = ''
+  copyMessage.value = ''
+
+  try {
+    if (!window.isSecureContext || !navigator.clipboard?.writeText)
+      throw new Error('Clipboard API unavailable')
+    await navigator.clipboard.writeText(css)
+    copied.value = true
+    copyMessage.value = 'CSS 已复制，可以粘贴到 styles/index.scss。'
+  }
+  catch {
+    const textarea = document.createElement('textarea')
+    textarea.value = css
+    textarea.setAttribute('readonly', '')
+    textarea.style.position = 'fixed'
+    textarea.style.left = '-9999px'
+    document.body.appendChild(textarea)
+    let copiedByFallback = false
+    try {
+      textarea.focus()
+      textarea.select()
+      textarea.setSelectionRange(0, textarea.value.length)
+      copiedByFallback = document.execCommand('copy')
+    }
+    catch {
+      copiedByFallback = false
+    }
+    finally {
+      textarea.remove()
+    }
+
+    if (copiedByFallback) {
+      copied.value = true
+      copyMessage.value = 'CSS 已复制，可以粘贴到 styles/index.scss。'
+    }
+    else {
+      copied.value = false
+      manualCss.value = css
+      copyMessage.value = '浏览器阻止了自动复制；请点下面文本框后按 Ctrl+C。'
+    }
+  }
+
+  window.setTimeout(() => copied.value = false, 2200)
 }
 
 watch(enabled, () => {
@@ -231,6 +273,15 @@ onBeforeUnmount(() => {
       <button type="button" @click="resetLayout">重置本色布局</button>
     </div>
     <p>{{ !isDesktop ? '请将浏览器窗口加宽到 960 像素以上后拖动；手机布局保持自动。' : enabled ? '拖动首页元素调整位置；预览保存在此浏览器。' : '本地开发工具。浅色与深色布局分别保存，复制 CSS 后可写入样式表。' }}</p>
+    <p v-if="copyMessage" role="status">{{ copyMessage }}</p>
+    <textarea
+      v-if="manualCss"
+      class="home-layout-editor__css"
+      :value="manualCss"
+      readonly
+      aria-label="可手动复制的布局 CSS"
+      @focus="($event.target as HTMLTextAreaElement).select()"
+    />
   </aside>
 </template>
 
@@ -278,6 +329,19 @@ onBeforeUnmount(() => {
 .home-layout-editor p {
   margin: 8px 0 0;
   opacity: 0.78;
+}
+
+.home-layout-editor__css {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid rgb(255 255 255 / 26%);
+  border-radius: 7px;
+  background: rgb(0 0 0 / 30%);
+  color: inherit;
+  font: 12px/1.4 ui-monospace, monospace;
 }
 
 .home-layout-draggable {

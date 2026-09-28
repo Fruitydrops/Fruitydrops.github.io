@@ -299,3 +299,45 @@ html.dark .yun-square-container .info > div.scale-x--100 {
     }
   }
 }
+
+/* 浅色首页布局，由本地拖拽编辑器生成 */
+@media (min-width: 960px) {
+  :root:not(.dark) .yun-square-container .site-author-name {
+    translate: 4px -79px !important;
+  }
+
+  :root:not(.dark) .yun-square-container .prologue-introduction .site-name {
+    translate: 17px -22px !important;
+  }
+
+  :root:not(.dark) .yun-square-container .prologue-introduction .site-subtitle {
+    translate: -129px -2px !important;
+  }
+
+  :root:not(.dark) .yun-square-container .prologue-introduction .site-description {
+    translate: 30px -2px !important;
+  }
+
+  :root:not(.dark) .yun-square-container .links-of-author {
+    translate: -319px -153px !important;
+  }
+
+  :root:not(.dark) .yun-square-container .prologue-navigation {
+    translate: 967px -145px !important;
+  }
+}
+
+/* 深色首页布局，由本地拖拽编辑器生成 */
+@media (min-width: 960px) {
+  :root.dark .yun-square-container .site-author-name {
+    translate: 3px -7px !important;
+  }
+
+  :root.dark .yun-square-container .links-of-author {
+    translate: -20px 311px !important;
+  }
+
+  :root.dark .yun-square-container .prologue-navigation {
+    translate: -13px 311px !important;
+  }
+}
