@@ -1,6 +1,7 @@
 <script setup lang="ts">
 defineProps<{
   href: string
+  event: string
 }>()
 </script>
 
@@ -9,7 +10,7 @@ defineProps<{
     :href="href"
     target="_blank"
     rel="noreferrer"
-    data-umami-event="shared-link-click"
+    :data-umami-event="event"
     :data-umami-event-url="href"
   ><slot>{{ href }}</slot></a>
 </template>

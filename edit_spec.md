@@ -120,10 +120,10 @@ comment: false
 普通裸 URL 会自动变成可点击链接，但不会单独记录点击。要在 Umami 统计某个分享链接，用 `TrackLink` 包起来：
 
 ```md
-<TrackLink href="https://example.com/video/123" />
+<TrackLink event="example-video-click" href="https://example.com/video/123" />
 ```
 
-组件默认原样显示 `href` 中的完整 URL，并在新标签页打开。多个被包裹的链接会使用同一个 `shared-link-click` 事件名，并将目标 URL 作为事件属性发送；在 Umami 的事件数据中按 `url` 区分每个链接。没有包裹的链接不计入这项统计。
+`event` 是必填项，可为每个链接设置不同的事件名；Umami 的事件名称最多 50 个字符。组件原样显示 `href` 中的完整 URL，在新标签页打开，并把目标 URL 作为 `url` 属性发送。没有包裹的链接不计入这项统计。
 
 ## 不要手动填写的生成字段
 
