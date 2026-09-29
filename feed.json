@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Damon's Blog",
+    "home_page_url": "https://fruitydrops.github.io/",
+    "feed_url": "https://fruitydrops.github.io/feed.json",
+    "description": "Sharing some of my thoughts and experiences.",
+    "icon": "https://fruitydrops.github.io/avatar.webp?v=2",
+    "author": {
+        "name": "Damon",
+        "url": "https://fruitydrops.github.io/"
+    },
+    "items": [
+        {
+            "id": "https://fruitydrops.github.io/posts/一些有趣的视频",
+            "content_html": "<!-- dude, don't peek . -->\n<p>&lt;TrackLink event=&quot;日本初恋故事&quot; href=&quot;<a href=\"https://www.bilibili.com/video/BV1Uve26e\">https://www.bilibili.com/video/BV1Uve26e</a></p>\n<br/><p>访问 <a href=\"https://fruitydrops.github.io/posts/一些有趣的视频\" target=\"_blank\">https://fruitydrops.github.io/posts/一些有趣的视频</a> 阅读全文。</p>",
+            "url": "https://fruitydrops.github.io/posts/一些有趣的视频",
+            "title": "一些有趣的视频",
+            "date_modified": "2026-09-28T00:00:00.000Z",
+            "date_published": "2026-09-28T00:00:00.000Z",
+            "author": {
+                "name": "Damon",
+                "url": "https://fruitydrops.github.io/"
+            }
+        },
+        {
+            "id": "https://fruitydrops.github.io/posts/hello-valaxy",
+            "content_html": "<p>::: zh-CN<br>\n这里是我的个人网站。</p>\n<p>内容正在整理中，之后会逐步更新日常分享、正事记录和随笔。<br>\n:::</p>\n<p>::: en<br>\nWelcome to my personal website.</p>\n<p>I’m</p>\n<br/><p>访问 <a href=\"https://fruitydrops.github.io/posts/hello-valaxy\" target=\"_blank\">https://fruitydrops.github.io/posts/hello-valaxy</a> 阅读全文。</p>",
+            "url": "https://fruitydrops.github.io/posts/hello-valaxy",
+            "title": "欢迎来到我的个人网站",
+            "date_modified": "2026-09-27T00:00:00.000Z",
+            "date_published": "2026-09-27T00:00:00.000Z",
+            "author": {
+                "name": "Damon",
+                "url": "https://fruitydrops.github.io/"
+            }
+        }
+    ]
+}

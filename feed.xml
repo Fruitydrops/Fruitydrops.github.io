@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Damon's Blog</title>
+        <link>https://fruitydrops.github.io/</link>
+        <description>Sharing some of my thoughts and experiences.</description>
+        <lastBuildDate>Tue, 29 Sep 2026 08:43:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Damon's Blog</title>
+            <url>https://fruitydrops.github.io/avatar.webp?v=2</url>
+            <link>https://fruitydrops.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2026 © Damon</copyright>
+        <atom:link href="https://fruitydrops.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[一些有趣的视频]]></title>
+            <link>https://fruitydrops.github.io/posts/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E8%A7%86%E9%A2%91</link>
+            <guid isPermaLink="false">https://fruitydrops.github.io/posts/一些有趣的视频</guid>
+            <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<!-- dude, don't peek . -->
+<p>&lt;TrackLink event=&quot;日本初恋故事&quot; href=&quot;<a href="https://www.bilibili.com/video/BV1Uve26e">https://www.bilibili.com/video/BV1Uve26e</a></p>
+<br/><p>访问 <a href="https://fruitydrops.github.io/posts/一些有趣的视频" target="_blank">https://fruitydrops.github.io/posts/一些有趣的视频</a> 阅读全文。</p>]]></content:encoded>
+            <author>2597582283@sjtu.edu.cn (Damon)</author>
+        </item>
+        <item>
+            <title><![CDATA[欢迎来到我的个人网站]]></title>
+            <link>https://fruitydrops.github.io/posts/hello-valaxy</link>
+            <guid isPermaLink="false">https://fruitydrops.github.io/posts/hello-valaxy</guid>
+            <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>::: zh-CN<br>
+这里是我的个人网站。</p>
+<p>内容正在整理中，之后会逐步更新日常分享、正事记录和随笔。<br>
+:::</p>
+<p>::: en<br>
+Welcome to my personal website.</p>
+<p>I’m</p>
+<br/><p>访问 <a href="https://fruitydrops.github.io/posts/hello-valaxy" target="_blank">https://fruitydrops.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
+            <author>2597582283@sjtu.edu.cn (Damon)</author>
+        </item>
+    </channel>
+</rss>

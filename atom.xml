@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://fruitydrops.github.io/</id>
+    <title>Damon's Blog</title>
+    <updated>2026-09-29T08:43:39.455Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Damon</name>
+        <email>2597582283@sjtu.edu.cn</email>
+        <uri>https://fruitydrops.github.io/</uri>
+    </author>
+    <link rel="alternate" href="https://fruitydrops.github.io/"/>
+    <link rel="self" href="https://fruitydrops.github.io/atom.xml"/>
+    <subtitle>Sharing some of my thoughts and experiences.</subtitle>
+    <logo>https://fruitydrops.github.io/avatar.webp?v=2</logo>
+    <icon>https://fruitydrops.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2026 © Damon</rights>
+    <entry>
+        <title type="html"><![CDATA[一些有趣的视频]]></title>
+        <id>https://fruitydrops.github.io/posts/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E8%A7%86%E9%A2%91</id>
+        <link href="https://fruitydrops.github.io/posts/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E8%A7%86%E9%A2%91"/>
+        <updated>2026-09-28T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<!-- dude, don't peek . -->
+<p>&lt;TrackLink event=&quot;日本初恋故事&quot; href=&quot;<a href="https://www.bilibili.com/video/BV1Uve26e">https://www.bilibili.com/video/BV1Uve26e</a></p>
+<br/><p>访问 <a href="https://fruitydrops.github.io/posts/一些有趣的视频" target="_blank">https://fruitydrops.github.io/posts/一些有趣的视频</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Damon</name>
+            <email>2597582283@sjtu.edu.cn</email>
+            <uri>https://fruitydrops.github.io/</uri>
+        </author>
+        <published>2026-09-28T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[欢迎来到我的个人网站]]></title>
+        <id>https://fruitydrops.github.io/posts/hello-valaxy</id>
+        <link href="https://fruitydrops.github.io/posts/hello-valaxy"/>
+        <updated>2026-09-27T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>::: zh-CN<br>
+这里是我的个人网站。</p>
+<p>内容正在整理中，之后会逐步更新日常分享、正事记录和随笔。<br>
+:::</p>
+<p>::: en<br>
+Welcome to my personal website.</p>
+<p>I’m</p>
+<br/><p>访问 <a href="https://fruitydrops.github.io/posts/hello-valaxy" target="_blank">https://fruitydrops.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Damon</name>
+            <email>2597582283@sjtu.edu.cn</email>
+            <uri>https://fruitydrops.github.io/</uri>
+        </author>
+        <published>2026-09-27T00:00:00.000Z</published>
+    </entry>
+</feed>
